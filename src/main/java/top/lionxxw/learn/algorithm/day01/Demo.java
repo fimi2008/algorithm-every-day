@@ -21,7 +21,8 @@ public class Demo {
 
     /**
      * 思路:
-     *  双指针,一个标记指针,一个循环指针
+     * 双指针,一个标记指针,一个循环指针
+     *
      * @param args
      */
     public static void main(String[] args) {
@@ -29,11 +30,11 @@ public class Demo {
         int flag = 0;
         for (int i = 0, len = nums.length; i < len; i++) {
             if (nums[i] != 0) {
-              int temp = nums[i];
-              nums[i] = nums[flag];
-              nums[flag++] = temp;
+                int temp = nums[i];
+                nums[i] = nums[flag];
+                nums[flag++] = temp;
             }
         }
-        System.out.println("结果:"+ Arrays.toString(nums));
+        System.out.println("结果:" + Arrays.toString(nums));
     }
 }
