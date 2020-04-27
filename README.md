@@ -4,3 +4,6 @@
 
 ## [day01](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/day01)
 > 给定一个数组nums,编写一个方法将所有0移动到数组的末尾
+
+## [day02](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/day02)
+> 给定一个无序的整数数组,找到其中最长上升子序列的长度.
