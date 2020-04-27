@@ -4,5 +4,5 @@
 
 [TOC]
 
-## day01
+* day01 [跳转](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/day01)
 > 给定一个数组nums,编写一个方法将所有0移动到数组的末尾
