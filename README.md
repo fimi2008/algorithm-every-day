@@ -1,7 +1,7 @@
 # 算法每日一题
 
 > 不积跬步，无以至千里；不积小流，无以成江海。
-> 出自（战国）荀子《荀子·劝学篇》。
+> -- 出自（战国）荀子《荀子·劝学篇》。
 
 ## 经典算法合集
 * [二分查找算法](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/classical/BinarySearchNonRecursive.java)
