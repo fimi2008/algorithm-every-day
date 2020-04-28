@@ -4,6 +4,8 @@ package top.lionxxw.learn.algorithm.classical;
  * 二分查找算法（非递归）
  * 举例:
  * [1,3,5,7,9,20,22,88,102], 查询 20 的下标
+ *
+ * 时间复杂度: O(logN)
  * <p>
  *
  * @author wangxiang
