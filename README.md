@@ -7,3 +7,5 @@
 
 ## [day02](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/day02)
 > 给定一个无序的整数数组,找到其中最长上升子序列的长度.
+
+## [二分查找算法](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/classical/)
