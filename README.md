@@ -5,6 +5,8 @@
 
 ## 经典算法合集
 * [二分查找算法](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/classical/BinarySearchNonRecursive.java)
+* [分治算法](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/classical/HanoiTower.java)
+
 
 ## [day01](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/day01)
 > 给定一个数组nums,编写一个方法将所有0移动到数组的末尾
