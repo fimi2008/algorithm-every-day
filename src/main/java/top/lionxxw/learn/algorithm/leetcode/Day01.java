@@ -1,4 +1,4 @@
-package top.lionxxw.learn.algorithm.day01;
+package top.lionxxw.learn.algorithm.leetcode;
 
 import java.util.Arrays;
 
@@ -17,7 +17,7 @@ import java.util.Arrays;
  * @author wangxiang
  * created on 2020/4/27 17:07
  */
-public class Demo {
+public class Day01 {
 
     /**
      * 思路:

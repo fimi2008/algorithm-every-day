@@ -1,4 +1,4 @@
-package top.lionxxw.learn.algorithm.day02;
+package top.lionxxw.learn.algorithm.leetcode;
 
 import java.util.Arrays;
 
@@ -19,7 +19,7 @@ import java.util.Arrays;
  * @author wangxiang
  * created on 2020/4/27 17:55
  */
-public class Demo {
+public class Day02 {
     public static void main(String[] args) {
         int[] nums = new int[]{10, 9, 2, 5, 3, 7, 101, 18};
 
