@@ -17,4 +17,7 @@
 ## [day03](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day03.java)
 > 快乐数
 
+## [day04](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day04.java)
+> 合并两个有序链表
+
 ## 持续更新中...
