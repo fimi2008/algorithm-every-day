@@ -22,4 +22,8 @@
 
 ## [day05](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day05.java)
 > 无重复字符的最长子串
+
+## [day06](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day06.java)
+> 最大子序和
+
 ## 持续更新中...
