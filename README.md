@@ -20,4 +20,6 @@
 ## [day04](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day04.java)
 > 合并两个有序链表
 
+## [day05](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day05.java)
+> 无重复字符的最长子串
 ## 持续更新中...
