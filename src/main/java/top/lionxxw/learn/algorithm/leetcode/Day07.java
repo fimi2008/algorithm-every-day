@@ -57,7 +57,7 @@ public class Day07 {
             if (i == end) {
                 end = maxPosition;
                 step++;
-                System.out.println("第" + step + "步跳下标" + i);
+                System.out.println("第" + step + "步跳最远距离:" + end);
             }
         }
         return step;
