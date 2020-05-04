@@ -26,4 +26,8 @@
 ## [day06](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day06.java)
 > 最大子序和
 
+## [day07](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day07.java)
+> 跳跃游戏 II
+
+
 ## 持续更新中...
