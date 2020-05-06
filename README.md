@@ -32,4 +32,8 @@
 ## [day08](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day08.java)
 > 验证二叉搜索树
 
+## [day09](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day09.java)
+> 最低票价
+
+
 ## 持续更新中...
