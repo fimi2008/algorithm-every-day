@@ -1,7 +1,7 @@
 # 算法每日一题
 
-> 不积跬步，无以至千里；不积小流，无以成江海。
-> -- 出自（战国）荀子《荀子·劝学篇》。
+> 不积跬步，无以至千里；不积小流，无以成江海。 -- 出自（战国）荀子《荀子·劝学篇》。
+> those who cannot remember the past are condemned to repeat it (那些不记得过去的人注定要重蹈覆辙)
 
 ## 经典算法合集
 * [二分查找算法](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/classical/BinarySearchNonRecursive.java)
@@ -34,6 +34,9 @@
 
 ## [day09](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day09.java)
 > 最低票价
+
+## [day10](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day10.java)
+> 钢管切割问题最优收益
 
 
 ## 持续更新中...
