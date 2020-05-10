@@ -47,4 +47,8 @@
 ## [day13](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day13.java)
 > x 的平方根
 
+## [day14](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day14.java)
+> 二叉树的最近公共祖先
+
+
 ## 持续更新中...
