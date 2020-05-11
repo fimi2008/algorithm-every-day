@@ -1,6 +1,6 @@
 # 算法每日一题
 
-> 不积跬步，无以至千里；不积小流，无以成江海。 -- 出自（战国）荀子《荀子·劝学篇》。
+> 不积跬步，无以至千里；不积小流，无以成江海。 -- 出自（战国）荀子《荀子·劝学篇》。<br>
 > those who cannot remember the past are condemned to repeat it (那些不记得过去的人注定要重蹈覆辙)
 
 ## 经典算法合集
@@ -49,6 +49,9 @@
 
 ## [day14](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day14.java)
 > 二叉树的最近公共祖先
+
+## [day15](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day15.java)
+> 实现 pow(x, n) ，即计算 x 的 n 次幂函数。
 
 
 ## 持续更新中...
