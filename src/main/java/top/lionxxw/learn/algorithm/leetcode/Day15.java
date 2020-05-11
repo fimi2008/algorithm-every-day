@@ -37,7 +37,7 @@ public class Day15 {
             x = 1 / x;
             n = -n;
         }
-        return quickMul2(x, n);
+        return quickMul(x, n);
     }
 
     /**
@@ -49,9 +49,9 @@ public class Day15 {
      * 递归的边界为 n = 0，任意数的 0 次方均为 1。
      * 复杂度分析
      * <p>
-     * 时间复杂度：O(\log n)O(logn)，即为递归的层数。
+     * 时间复杂度：O(logn)，即为递归的层数。
      * <p>
-     * 空间复杂度：O(\log n)O(logn)，即为递归的层数。这是由于递归的函数调用会使用栈空间。
+     * 空间复杂度：O(logn)，即为递归的层数。这是由于递归的函数调用会使用栈空间。
      */
     private double quickMul(double x, int n) {
         if (n == 0) {
