@@ -53,5 +53,8 @@
 ## [day15](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day15.java)
 > 实现 pow(x, n) ，即计算 x 的 n 次幂函数。
 
+## [day16](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day16.java)
+> 最小栈
+
 
 ## 持续更新中...

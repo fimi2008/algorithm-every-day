@@ -1,5 +1,8 @@
 package top.lionxxw.learn.algorithm.classical;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * 动态规划算法案例：背包问题
  * 思路分析：
@@ -39,6 +42,8 @@ public class KnapsackProblem {
         for (int i = 0; i < v.length; i++) {
             v[0][i] = 0; // 第一列为0
         }
+        List list = new ArrayList();
+        list.get(1);
         for (int i = 0; i < v.length; i++) {
             v[i][0] = 0; // 第一行为0
         }
