@@ -3,6 +3,9 @@
 > 不积跬步，无以至千里；不积小流，无以成江海。 -- 出自（战国）荀子《荀子·劝学篇》。<br>
 > those who cannot remember the past are condemned to repeat it (那些不记得过去的人注定要重蹈覆辙)
 
+## 算法学习笔记
+* [点击传送门](https://github.com/fimi2008/algorithm-every-day/src/node)
+
 ## 经典算法合集
 * [二分查找算法](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/classical/BinarySearchNonRecursive.java)
 * [分治算法](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/classical/HanoiTower.java)
@@ -55,6 +58,9 @@
 
 ## [day16](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day16.java)
 > 最小栈
+
+## [day17](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day17.java)
+> 二叉树的层序遍历
 
 
 ## 持续更新中...

@@ -19,6 +19,9 @@ public class InsertionSort extends BaseClass {
         System.out.println(Arrays.toString(arr2));
     }
 
+    /**
+     * 时间复杂度:O(N)
+     */
     public static void insertionSort(int[] arr) {
         if (arr == null || arr.length < 2) {
             return;
