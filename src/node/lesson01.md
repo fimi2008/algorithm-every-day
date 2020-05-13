@@ -114,7 +114,7 @@
 ### 题目二
 >一个数组中有一种数出现了奇数次，其他数都出现了偶数次，怎么找到并打印这种数 [案例][EvenTimesOddTimes]
 
-[EvenTimesOddTimes](https://github.com/fimi2008/algorithm-every-day/blob/master/src/main/java/top/lionxxw/learn/algorithm/lesson/day01/EvenTimesOddTimes.java)
-
 ### 题目三
 >怎么把一- 个int类型的数，提取出最右侧的1来 [案例][EvenTimesOddTimes]
+
+[EvenTimesOddTimes]: https://github.com/fimi2008/algorithm-every-day/blob/master/src/main/java/top/lionxxw/learn/algorithm/lesson/day01/EvenTimesOddTimes.java
