@@ -4,7 +4,7 @@
 > those who cannot remember the past are condemned to repeat it (那些不记得过去的人注定要重蹈覆辙)
 
 ## 算法学习笔记
-* [点击传送门](https://github.com/fimi2008/algorithm-every-day/src/node)
+* [点击传送门](https://github.com/fimi2008/algorithm-every-day/tree/master/src/node)
 
 ## 经典算法合集
 * [二分查找算法](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/classical/BinarySearchNonRecursive.java)
