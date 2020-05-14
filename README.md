@@ -62,5 +62,8 @@
 ## [day17](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day17.java)
 > 二叉树的层序遍历
 
+## [day18](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day18.java)
+>只出现一次的数字
+
 
 ## 持续更新中...
