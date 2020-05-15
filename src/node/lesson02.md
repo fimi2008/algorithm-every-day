@@ -26,3 +26,18 @@
 
 ### 如何用栈结构实现队列结构 [案例](https://github.com/fimi2008/algorithm-every-day/blob/master/src/main/java/top/lionxxw/learn/algorithm/lesson/day02/StackImplementQueue.java)
 ### 如何用队列结构实现栈结构 [案例](https://github.com/fimi2008/algorithm-every-day/blob/master/src/main/java/top/lionxxw/learn/algorithm/lesson/day02/QueueImplementStack.java)
+
+## 递归
+> 任何递归问题都可以改成非递归问题.
+> 为什么? 因为递归是利用系统栈实现方法调用,可以使用代码模拟系统栈调用
+
+### 递归公式: T(N) = aT(N/b)+O(N^d) 其中a,b,d 为常数
+1. logba>d O(Nlogba)
+2. logba<d O(N^d)
+3. logba=d O(N^d*logN)
+
+### 求数组arr[L. R]中的最大值，怎么用递归方法实现。
+> 1)将[L. .R]范围分成左右两半。左: [L.Mid]右[Mid+1..R] <br>
+> 2)左部分求最大值，右部分求最大值<br>
+> 3)[L.R]范围.上的最大值，是max{左部分最大值，右部分最大值}<br>
+> 注意: 2)是个递归过程，当范围上只有一个数，就可以不用再递归了  [案例](https://github.com/fimi2008/algorithm-every-day/blob/master/src/main/java/top/lionxxw/learn/algorithm/lesson/day02/GetMax.java)
