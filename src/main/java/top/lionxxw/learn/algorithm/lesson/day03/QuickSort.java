@@ -11,6 +11,7 @@ import java.util.Arrays;
  */
 public class QuickSort {
 
+
     public static void main(String[] args) {
         int[] arr = genRandomArray(5000,1000);
         int[] arr2 = copyArray(arr);
@@ -125,6 +126,7 @@ public class QuickSort {
         if (l >= r) {
             return;
         }
+        // 随机选一个位置和r交换
         swap(arr, l + (int) (Math.random() * (r - l + 1)), r);
         int[] m = netherlandsFlag(arr, l, r);
         process3(arr, l, m[0] - 1);
