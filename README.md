@@ -83,5 +83,10 @@
 ## [day24](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day24.java)
 >每个元音包含偶数次的最长子字符串
 
+## [day25](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day25.java)
+>最长回文子串
+
+## [day26](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day26.java)
+>从前序与中序遍历序列构造二叉树
 
 ## 持续更新中...

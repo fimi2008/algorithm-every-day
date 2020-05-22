@@ -28,3 +28,10 @@
 要求额外空间复杂度0(1)，时间复杂度O(N)  
 [案例](https://github.com/fimi2008/algorithm-every-day/blob/master/src/main/java/top/lionxxw/learn/algorithm/lesson/day03/QuickSortQuestion.java)
 [快速排序](https://github.com/fimi2008/algorithm-every-day/blob/master/src/main/java/top/lionxxw/learn/algorithm/lesson/day03/QuickSort.java)
+
+## 随机快排的时间复杂度分析
+>1)通过分析知道，划分值越靠近中间，性能越好;越靠近两边，性能越差
+>2)随机选一个数进行划分的目的就是让好情况和差情况都变成概率事件
+>3)把每一种情况都列出来，会有每种情况下的时间复杂度，但概率都是1/N
+>4)那么所有情况都考虑，时间复杂度就是这种概率模型下的长期期望!
+>时间复杂度O(N+logN)，额外空间复杂度O(logN)都是这么来的。
