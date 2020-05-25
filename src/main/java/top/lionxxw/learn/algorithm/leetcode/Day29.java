@@ -90,7 +90,6 @@ public class Day29 {
                 node.value = value;
                 moveToHead(node);
             }
-
         }
 
         private void moveToHead(DLinkedNode node) {
