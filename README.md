@@ -89,4 +89,12 @@
 ## [day26](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day26.java)
 >从前序与中序遍历序列构造二叉树
 
+## [day27](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day27.java)
+>最小覆盖子串
+
+## [day28](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day28.java)
+>寻找两个正序数组的中位数
+
+
+
 ## 持续更新中...
