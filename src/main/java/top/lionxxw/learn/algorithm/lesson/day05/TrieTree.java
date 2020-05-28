@@ -1,5 +1,7 @@
 package top.lionxxw.learn.algorithm.lesson.day05;
 
+import top.lionxxw.learn.algorithm.lesson.day01.BaseClass;
+
 /**
  * 前缀树
  * <p>
@@ -7,7 +9,7 @@ package top.lionxxw.learn.algorithm.lesson.day05;
  * @author wangxiang
  * created on 2020/5/27 23:08
  */
-public class TrieTree {
+public class TrieTree extends BaseClass {
 
     public static void main(String[] args) {
         TrieTree trieTree = new TrieTree();
