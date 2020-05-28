@@ -3,6 +3,7 @@
 ## [2-链表结构、栈、队列、递归行为、哈希表](https://github.com/fimi2008/algorithm-every-day/blob/master/src/node/lesson02.md)
 ## [3-归并排序与随机快排](https://github.com/fimi2008/algorithm-every-day/blob/master/src/node/lesson03.md)
 ## [4-比较器与堆](https://github.com/fimi2008/algorithm-every-day/blob/master/src/node/lesson04.md)
+## [5-trie、桶排序、排序总结](https://github.com/fimi2008/algorithm-every-day/blob/master/src/node/lesson05.md)
 
 ## 排序算法总结
 | 排序算法 | 时间复杂度 | 空间复杂度 | 稳定性 |
