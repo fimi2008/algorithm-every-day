@@ -4,10 +4,10 @@
 2)字符放在路上，节点上有专属的数据项(常见的是pass和end值)
 3)所有样本都这样添加，如果没有路就新建，如有路就复用
 4)沿途节点的pass值增加1，每个字符串结束时来到的节点end值增加1
-可以完成前缀相关的查询
+可以完成前缀相关的查询 [案例](https://github.com/fimi2008/algorithm-every-day/blob/master/src/main/java/top/lionxxw/learn/algorithm/lesson/day05/TrieTree.java)
 
 ## 不基于比较的排序
->桶排序思想下的排序:计数排序&基数排序
+>桶排序思想下的排序:[计数排序](https://github.com/fimi2008/algorithm-every-day/blob/master/src/main/java/top/lionxxw/learn/algorithm/lesson/day05/CountSort.java) & [基数排序](https://github.com/fimi2008/algorithm-every-day/blob/master/src/main/java/top/lionxxw/learn/algorithm/lesson/day05/RadixSort.java)
 1)桶排,序思想下的排序都是不基于比较的排序
 2)时间复杂度为O(N)，额外空间负载度O(M)
 3)应用范围有限，需要样本的数据状况满足桶的划分

@@ -122,7 +122,7 @@ public class IsPalindromeList {
         }
         // 用temp指向新的逆序节点为n1
         temp = n1;
-        // 用n2指向原链表
+        // 用n2指向原链表左侧部分
         n2 = head;
         boolean res = true;
         while (n1 != null && n2 != null){

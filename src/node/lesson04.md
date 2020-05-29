@@ -17,13 +17,14 @@
     > 2)从下到上的方法，时间复杂度为O(N)
 > 2，把堆的最大值和堆末尾的值交换，然后减少堆的大小之后，再去调整堆，
  一直周而复始， 时间复杂度为O(N*logN)
-> 3，堆的大小减小成0之后，排序完成
+> 3，堆的大小减小成0之后，排序完成 [案例](https://github.com/fimi2008/algorithm-every-day/blob/master/src/main/java/top/lionxxw/learn/algorithm/lesson/day04/MyHeap.java)
 
 
 ## 与堆有关的题目
 >已知一个几乎有序的数组。几乎有序是指，如果把数组排好顺序的话，每个
    元素移动的距离一定不超过k，并且k相对于数组长度来说是比较小的。
    请选择- -个合适的排序策略，对这个数组进行排序。
+>[案例](https://github.com/fimi2008/algorithm-every-day/blob/master/src/main/java/top/lionxxw/learn/algorithm/lesson/day04/SortArrayDistanceLessK.java)
 
 ## 比较器.
 >1)比较器的实质就是重载比较运算符
