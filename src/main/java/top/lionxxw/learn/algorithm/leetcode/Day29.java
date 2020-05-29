@@ -1,6 +1,7 @@
 package top.lionxxw.learn.algorithm.leetcode;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
@@ -11,6 +12,8 @@ import java.util.Map;
  * <p>
  * 进阶:
  * 你是否可以在 O(1) 时间复杂度内完成这两种操作？
+ *
+ * redis的内存淘汰机制底层原理算法就是LRU
  *
  * @author wangxiang
  * created on 2020/5/25 10:06
@@ -116,27 +119,30 @@ public class Day29 {
         }
     }
 
-//    static class LRUCache extends LinkedHashMap<Integer, Integer> {
-//
-//        private int capacity;
-//
-//        // 链表记录插入顺序
-//        public LRUCache(int capacity) {
-//           super(capacity, 0.75F, true);
-//            this.capacity = capacity;
-//        }
-//
-//        public int get(int key) {
-//           return super.getOrDefault(key, -1);
-//        }
-//
-//        public void put(int key, int value) {
-//            super.put(key, value);
-//        }
-//
-//        @Override
-//        protected boolean removeEldestEntry(Map.Entry<Integer, Integer> eldest) {
-//            return size() > capacity;
-//        }
-//    }
+    /**
+     * 基于LinkedHashMap实现LRU缓存,
+     */
+    static class LRUCache2 extends LinkedHashMap<Integer, Integer> {
+
+        private int capacity;
+
+        // 链表记录插入顺序
+        public LRUCache2(int capacity) {
+           super(capacity, 0.75F, true);
+            this.capacity = capacity;
+        }
+
+        public int get(int key) {
+           return super.getOrDefault(key, -1);
+        }
+
+        public void put(int key, int value) {
+            super.put(key, value);
+        }
+
+        @Override
+        protected boolean removeEldestEntry(Map.Entry<Integer, Integer> eldest) {
+            return size() > capacity;
+        }
+    }
 }
