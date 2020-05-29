@@ -98,4 +98,16 @@
 ## [day29](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day29.java)
 >LRU缓存机制
 
+## [day30](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day30.java)
+>寻找重复数
+
+## [day31](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day31.java)
+>和可被 K 整除的子数组
+
+## [day32](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day32.java)
+>字符串解码
+
+## [day33](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day33.java)
+>打家劫舍
+
 ## 持续更新中...
