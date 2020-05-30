@@ -1,5 +1,8 @@
 package top.lionxxw.learn.algorithm.leetcode;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
+
 /**
  * 84. 柱状图中最大的矩形
  * 给定 n 个非负整数，用来表示柱状图中各个柱子的高度。每个柱子彼此相邻，且宽度为 1 。
@@ -18,6 +21,7 @@ public class Day34 {
         int[] heights = {2, 1, 5, 6, 2, 3};
         System.out.println(largestRectangleArea(heights));
         System.out.println(largestRectangleArea2(heights));
+        System.out.println(largestRectangleArea3(heights));
     }
 
     /**
@@ -65,5 +69,36 @@ public class Day34 {
             }
         }
         return res;
+    }
+
+    public static int largestRectangleArea3(int[] heights) {
+        int len = heights.length;
+        if (len == 0) {
+            return 0;
+        }
+        if (len == 1) {
+            return heights[0];
+        }
+        // 头和尾各加一个哨兵节点
+        int[] newHeights = new int[len + 2];
+        for (int i = 0; i < len; i++) {
+            newHeights[i + 1] = heights[i];
+        }
+        heights = newHeights;
+        len += 2;
+
+        int area = 0;
+        Deque<Integer> stack = new ArrayDeque<>();
+        stack.addLast(0);
+
+        for (int i = 1; i < len; i++) {
+            while (heights[stack.peekLast()] > heights[i]) {
+                int height = heights[stack.removeLast()];
+                int width = i - stack.peekLast() - 1;
+                area = Math.max(area, width * height);
+            }
+            stack.addLast(i);
+        }
+        return area;
     }
 }
