@@ -22,9 +22,10 @@ public class SmallerEqualBigger extends BaseClass {
         head1.next.next.next.next.next = new Node(2);
         head1.next.next.next.next.next.next = new Node(5);
         printLinkedList(head1);
-        // head1 = listPartition1(head1, 4);
-        head1 = listPartition2(head1, 5);
+        head1 = listPartition1(head1, 5);
         printLinkedList(head1);
+//        head1 = listPartition2(head1, 5);
+//        printLinkedList(head1);
     }
 
     public static class Node {
@@ -34,6 +35,50 @@ public class SmallerEqualBigger extends BaseClass {
         public Node(int data) {
             this.value = data;
         }
+    }
+
+    public static Node listPartition1(Node head, int pivot) {
+        Node cur = head;
+        int count = 0;
+        // 获取链表长度
+        while (cur != null) {
+            count++;
+            cur = cur.next;
+        }
+        Node[] arr = new Node[count];
+        cur = head;
+        int i;
+        // 将node转为数组
+        for (i = 0; i < count; i++) {
+            arr[i] = cur;
+            cur = cur.next;
+        }
+        i = 0;
+        int left = -1;
+        int right = count;
+        // 进行数组荷兰国旗问题
+        while (i < right) {
+            if (arr[i].value < pivot) {
+                swap(arr, ++left, i++);
+            } else if (arr[i].value > pivot) {
+                swap(arr, --right, i);
+            } else {
+                i++;
+            }
+        }
+
+        // 重新生成链表
+        for (i = 1; i < count; i++) {
+            arr[i - 1].next = arr[i];
+        }
+        arr[i - 1].next = null;
+        return arr[0];
+    }
+
+    private static void swap(Node[] arr, int i, int j) {
+        Node temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
     }
 
     public static Node listPartition2(Node head, int pivot) {
@@ -76,7 +121,7 @@ public class SmallerEqualBigger extends BaseClass {
         if (ct != null) {
             ct.next = rh;
         }
-        return lh != null? lh: ch != null ? ch: rh;
+        return lh != null ? lh : ch != null ? ch : rh;
     }
 
     public static void printLinkedList(Node node) {
