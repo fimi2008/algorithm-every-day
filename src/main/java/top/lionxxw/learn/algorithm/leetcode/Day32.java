@@ -1,8 +1,6 @@
 package top.lionxxw.learn.algorithm.leetcode;
 
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.Stack;
+import java.util.*;
 
 /**
  * 394. 字符串解码
@@ -37,7 +35,7 @@ public class Day32 {
         if (s == null) {
             return s;
         }
-        Stack<Object> stack = new Stack<>();
+        Deque<Object> stack = new ArrayDeque<>();
         int index = 0;
         int num = 0;
         while (index < s.length()) {

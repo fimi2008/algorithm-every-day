@@ -2,6 +2,8 @@ package top.lionxxw.learn.algorithm.lesson.day02;
 
 import com.sun.xml.internal.bind.util.Which;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.Scanner;
 import java.util.Stack;
 
@@ -16,13 +18,13 @@ import java.util.Stack;
  */
 public class MyStack {
     // 数据栈
-    private Stack<Integer> dataStack;
+    private Deque<Integer> dataStack;
     // 最小值栈
-    private Stack<Integer> minStack;
+    private Deque<Integer> minStack;
 
     public MyStack() {
-        this.dataStack = new Stack<>();
-        this.minStack = new Stack<>();
+        this.dataStack = new ArrayDeque<>();
+        this.minStack = new ArrayDeque<>();
     }
 
     /**

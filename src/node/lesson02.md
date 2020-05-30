@@ -20,6 +20,15 @@
    * 栈:正常使用 [案例](https://github.com/fimi2008/algorithm-every-day/blob/master/src/main/java/top/lionxxw/learn/algorithm/lesson/day02/RingArray.java)
    * 队列:环形数组 [案例](https://github.com/fimi2008/algorithm-every-day/blob/master/src/main/java/top/lionxxw/learn/algorithm/lesson/day02/RingArray.java)
 
+## 特别注意点
+> Java 程序员，别用 Stack？！[为什么?](https://mp.weixin.qq.com/s/Ba8jrULf8NJbENK6WGrVWg)
+> 1.Java中的Stack继承Vector类,违反了OOP设计原则(Composition over inheritance 即组合优于继承),
+> Stack和Vector应该是has-a的关系,不应该是is-a;
+> 判断is-a和has-a的一个简单原则:判断一下，如果设计成继承关系的话，我们是否有可能把子类进行向上的父类转型？如果可能，则应该设计成继承关系，否则应该是组合关系。
+> 2.在Stack类的说明上推荐写法:Deque<Integer> stack = new ArrayDeque<>(); 
+> 3.其实使用Deque也是有问题,Deque 是双端队列,可以两端插入和删除,而Stack的数据结构只能在同一端操作,这是属于Java的历史遗留问题,至今无聊;
+> 最简单的解决方法就是在封装一层,限制只能在一端进行插入和删除操作.
+
 ### 实现一个特殊的栈，在基本功能的基础上，再实现返回栈中最小元素的功能
 > 1) pop、 push、 getMin操作的时间复杂度都是O(1)。<br>
 > 2)设计的栈类型可以使用现成的栈结构。

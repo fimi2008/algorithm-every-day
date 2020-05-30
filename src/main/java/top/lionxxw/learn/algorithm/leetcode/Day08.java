@@ -1,5 +1,7 @@
 package top.lionxxw.learn.algorithm.leetcode;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.Stack;
 
 /**
@@ -106,7 +108,7 @@ public class Day08 {
      * @return true/false
      */
     private boolean helper(TreeNode root) {
-        Stack<TreeNode> stack = new Stack<>();
+        Deque<TreeNode> stack = new ArrayDeque<>();
         Integer order = null;
         while (!stack.isEmpty() || root != null) {
             // 第一步先遍历左子树

@@ -16,3 +16,7 @@
 >给定一个单链表的头节点head,请判断该链表是否为回文结构。[案例](https://github.com/fimi2008/algorithm-every-day/blob/master/src/main/java/top/lionxxw/learn/algorithm/lesson/day06/IsPalindromeList.java)
 1)栈方法特别简单(笔试用)
 2)改原链表的方法就需要注意边界了(面试用)
+
+>将单向链表按某值划分成左边小、中间相等、右边大的形式
+1)把链表放入数组里，在数组上做partition (笔试用)
+2)分成小、中、大三部分，再把各个部分之间串起来(面试用)

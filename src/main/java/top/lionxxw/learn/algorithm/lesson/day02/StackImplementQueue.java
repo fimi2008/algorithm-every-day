@@ -1,5 +1,7 @@
 package top.lionxxw.learn.algorithm.lesson.day02;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.Scanner;
 import java.util.Stack;
 
@@ -15,12 +17,12 @@ import java.util.Stack;
  */
 public class StackImplementQueue {
 
-    private Stack<Integer> stackPush;
-    private Stack<Integer> stackPop;
+    private Deque<Integer> stackPush;
+    private Deque<Integer> stackPop;
 
     public StackImplementQueue() {
-        this.stackPush = new Stack<>();
-        this.stackPop = new Stack<>();
+        this.stackPush = new ArrayDeque<>();
+        this.stackPop = new ArrayDeque<>();
     }
 
     public void add(int value){

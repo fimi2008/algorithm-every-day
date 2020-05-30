@@ -1,6 +1,7 @@
 package top.lionxxw.learn.algorithm.lesson.day06;
 
-import java.time.temporal.ValueRange;
+import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.Stack;
 
 /**
@@ -41,7 +42,7 @@ public class IsPalindromeList {
      * @return
      */
     public static boolean isPalindrome1(Node head) {
-        Stack<Node> stack = new Stack<>();
+        Deque<Node> stack = new ArrayDeque<>();
         Node temp = head;
         while (temp != null) {
             stack.push(temp);
@@ -74,7 +75,7 @@ public class IsPalindromeList {
             slow = slow.next;
         }
 
-        Stack<Node> stack = new Stack<Node>();
+        Deque<Node> stack = new ArrayDeque<>();
         while (slow != null) {
             stack.push(slow);
             slow = slow.next;
