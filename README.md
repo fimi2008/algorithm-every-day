@@ -110,4 +110,9 @@
 ## [day33](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day33.java)
 >打家劫舍
 
+## [day34](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day34.java)
+>柱状图中最大的矩形
+
+## [day35](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day35.java)
+>对称二叉树
 ## 持续更新中...
