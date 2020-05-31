@@ -6,6 +6,11 @@
 ## 算法学习笔记
 * [点击传送门](https://github.com/fimi2008/algorithm-every-day/tree/master/src/node)
 
+## 解题思路
+### 关键字:二叉树.
+>递归解法<br>
+-模式识别:深度周游(递归)和广度周游(队列)
+
 ## 经典算法合集
 * [二分查找算法](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/classical/BinarySearchNonRecursive.java)
 * [分治算法](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/classical/HanoiTower.java)
