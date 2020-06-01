@@ -120,4 +120,7 @@
 
 ## [day35](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day35.java)
 >对称二叉树
+
+## [day36](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day36.java)
+>拥有最多糖果的孩子
 ## 持续更新中...
