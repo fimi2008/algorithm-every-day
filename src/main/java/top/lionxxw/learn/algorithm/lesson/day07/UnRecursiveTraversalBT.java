@@ -126,16 +126,21 @@ public class UnRecursiveTraversalBT {
         }
         Deque<Node> stack = new ArrayDeque<>();
         stack.push(head);
-        // 辅助节点,判断是否为当前节点的左或右子节点
+        // 辅助节点,记为当前节点
         Node c;
         while (!stack.isEmpty()) {
             c = stack.peek();
+            // 1.当前节点的左节点是否存在,左,右节点是否打印过
             if (c.left != null && head != c.left && head != c.right) {
                 stack.push(c.left);
-            } else if (c.right != null && head != c.right) {
+            }
+            // 2.当前节点的右节点是否存在,右节点是否打印过
+            else if (c.right != null && head != c.right) {
                 stack.push(c.right);
             } else {
+                // 1和2条件不满足,打印节点,并且记录当前节点
                 System.out.println(stack.pop().value);
+                // 记录上次打印的节点
                 head = c;
             }
         }
