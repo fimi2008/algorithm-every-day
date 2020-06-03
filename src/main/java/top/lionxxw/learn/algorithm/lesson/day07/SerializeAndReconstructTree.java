@@ -57,6 +57,11 @@ public class SerializeAndReconstructTree {
         node = buildByPosQueue(poslist);
         comparator = isSameValueStructure(head, node);
         System.out.println(comparator ? "ok" : "fail");
+        Queue<String> levelist = levelSerial(head);
+        System.out.println("层序列化结果:" + levelist);
+        node = buildByLevelQueue(levelist);
+        comparator = isSameValueStructure(head, node);
+        System.out.println(comparator ? "ok" : "fail");
     }
 
     // for test
@@ -172,7 +177,7 @@ public class SerializeAndReconstructTree {
             return null;
         }
         Stack<String> stack = new Stack<>();
-        while (!poslist.isEmpty()){
+        while (!poslist.isEmpty()) {
             stack.push(poslist.poll());
         }
         return posb(stack);
@@ -180,12 +185,73 @@ public class SerializeAndReconstructTree {
 
     private static Node posb(Stack<String> stack) {
         String value = stack.pop();
-        if (value == null){
+        if (value == null) {
             return null;
         }
         Node head = new Node(Integer.valueOf(value));
         head.right = posb(stack);
         head.left = posb(stack);
         return head;
+    }
+
+    // 按层序列化
+    public static Queue<String> levelSerial(Node head) {
+        Queue<String> ans = new LinkedList<>();
+        if (head == null) {
+            ans.add(null);
+        } else {
+            ans.add(String.valueOf(head.value));
+            Queue<Node> queue = new LinkedList<Node>();
+            queue.add(head);
+            while (!queue.isEmpty()) {
+                head = queue.poll();
+                if (head.left == null) {
+                    ans.add(null);
+                } else {
+                    ans.add(String.valueOf(head.left.value));
+                    queue.add(head.left);
+                }
+                if (head.right == null) {
+                    ans.add(null);
+                } else {
+                    ans.add(String.valueOf(head.right.value));
+                    queue.add(head.right);
+                }
+            }
+        }
+        return ans;
+    }
+
+    public static Node buildByLevelQueue(Queue<String> levelList) {
+        if (levelList == null || levelList.size() == 0) {
+            return null;
+        }
+        String value = levelList.poll();
+        if (value == null){
+            return null;
+        }
+        Node head = new Node(Integer.valueOf(value));
+        Queue<Node> queue = new LinkedList<>();
+        queue.add(head);
+        Node node;
+        while (!queue.isEmpty()){
+            node = queue.poll();
+            node.left = generateNode(levelList.poll());
+            node.right = generateNode(levelList.poll());
+            if (node.left != null){
+                queue.add(node.left);
+            }
+            if (node.right != null){
+                queue.add(node.right);
+            }
+        }
+        return head;
+    }
+
+    public static Node generateNode(String val) {
+        if (val == null) {
+            return null;
+        }
+        return new Node(Integer.valueOf(val));
     }
 }
