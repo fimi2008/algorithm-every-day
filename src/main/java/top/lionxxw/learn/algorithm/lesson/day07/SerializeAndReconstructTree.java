@@ -2,8 +2,7 @@ package top.lionxxw.learn.algorithm.lesson.day07;
 
 import java.util.LinkedList;
 import java.util.Queue;
-
-import static com.sun.xml.internal.xsom.impl.UName.comparator;
+import java.util.Stack;
 
 /**
  * 二叉树的序列化和反序列化
@@ -46,30 +45,35 @@ public class SerializeAndReconstructTree {
         Queue<String> prelist = preSerial(head);
         System.out.println("前序序列化结果:" + prelist);
         Node node = buildByPreQueue(prelist);
-        boolean comparator = comparator(head, node);
+        boolean comparator = isSameValueStructure(head, node);
         System.out.println(comparator ? "ok" : "fail");
         Queue<String> inlist = inSerial(head);
         System.out.println("中序序列化结果:" + inlist);
         node = buildByInQueue(inlist);
-        comparator = comparator(head, node);
+        comparator = isSameValueStructure(head, node);
+        System.out.println(comparator ? "ok" : "fail");
+        Queue<String> poslist = posSerial(head);
+        System.out.println("后序序列化结果:" + poslist);
+        node = buildByPosQueue(poslist);
+        comparator = isSameValueStructure(head, node);
         System.out.println(comparator ? "ok" : "fail");
     }
 
-    private static boolean comparator(Node head, Node node) {
-        if (head != null && node != null) {
-            if (head.value != node.value) {
-                System.out.println("二叉树不相等");
-                return false;
-            }
-            comparator(head.left, node.left);
-            comparator(head.right, node.right);
-        } else if (head == null && node == null) {
-            return true;
-        } else {
-            System.out.println("二叉树不相等");
+    // for test
+    public static boolean isSameValueStructure(Node head1, Node head2) {
+        if (head1 == null && head2 != null) {
             return false;
         }
-        return true;
+        if (head1 != null && head2 == null) {
+            return false;
+        }
+        if (head1 == null && head2 == null) {
+            return true;
+        }
+        if (head1.value != head2.value) {
+            return false;
+        }
+        return isSameValueStructure(head1.left, head2.left) && isSameValueStructure(head1.right, head2.right);
     }
 
     // 二叉树前序序列化
@@ -134,10 +138,12 @@ public class SerializeAndReconstructTree {
 
     private static Node inb(Queue<String> inlist) {
         String value = inlist.poll();
-        Node left = new Node(Integer.parseInt(value));
+        if (value == null) {
+            return null;
+        }
         // 先左子树、再头节点、然后右子树<
         Node left = inb(inlist);
-
+        Node head = new Node(Integer.parseInt(value));
         head.left = left;
         head.right = inb(inlist);
         return head;
@@ -155,9 +161,31 @@ public class SerializeAndReconstructTree {
         if (head == null) {
             ans.add(null);
         } else {
-            ins(head.left, ans);
-            ins(head.right, ans);
+            poss(head.left, ans);
+            poss(head.right, ans);
             ans.add(String.valueOf(head.value));
         }
+    }
+
+    public static Node buildByPosQueue(Queue<String> poslist) {
+        if (poslist == null || poslist.size() == 0) {
+            return null;
+        }
+        Stack<String> stack = new Stack<>();
+        while (!poslist.isEmpty()){
+            stack.push(poslist.poll());
+        }
+        return posb(stack);
+    }
+
+    private static Node posb(Stack<String> stack) {
+        String value = stack.pop();
+        if (value == null){
+            return null;
+        }
+        Node head = new Node(Integer.valueOf(value));
+        head.right = posb(stack);
+        head.left = posb(stack);
+        return head;
     }
 }
