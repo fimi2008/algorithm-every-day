@@ -1,7 +1,5 @@
 package top.lionxxw.learn.algorithm.lesson.day07;
 
-import com.sun.jmx.remote.internal.ArrayQueue;
-
 import java.util.LinkedList;
 import java.util.Queue;
 
