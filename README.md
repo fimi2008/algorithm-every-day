@@ -126,4 +126,14 @@
 
 ## [day37](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day37.java)
 >求 1+2+...+n ，要求不能使用乘除法、for、while、if、else、switch、case等关键字及条件判断语句（A?B:C）。
+
+## [day38](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day38.java)
+>837. 新21点 837. New 21
+
+## [day39](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day39.java)
+>238. 除自身以外数组的乘积
+
+## [day40](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day40.java)
+>面试题29. 顺时针打印矩阵
+
 ## 持续更新中...
