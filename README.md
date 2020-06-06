@@ -136,4 +136,6 @@
 ## [day40](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day40.java)
 >面试题29. 顺时针打印矩阵
 
+## [day41](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day41.java)
+>128. 最长连续序列
 ## 持续更新中...
