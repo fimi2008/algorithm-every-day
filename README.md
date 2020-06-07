@@ -138,4 +138,7 @@
 
 ## [day41](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day41.java)
 >128. 最长连续序列
+
+## [day42](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day42.java)
+>126. 单词接龙 II
 ## 持续更新中...
