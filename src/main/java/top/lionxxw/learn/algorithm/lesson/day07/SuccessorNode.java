@@ -42,25 +42,46 @@ public class SuccessorNode {
         head.right.right.parent = head.right;
 
         Node test = head.left.left;
-        System.out.println(test.value + " next: " + getSuccessorNode(test).value);
+        System.out.println(test.value + " next: " + getPosNode(test).value);
         test = head.left.left.right;
-        System.out.println(test.value + " next: " + getSuccessorNode(test).value);
+        System.out.println(test.value + " next: " + getPosNode(test).value);
         test = head.left;
-        System.out.println(test.value + " next: " + getSuccessorNode(test).value);
+        System.out.println(test.value + " next: " + getPosNode(test).value);
         test = head.left.right;
-        System.out.println(test.value + " next: " + getSuccessorNode(test).value);
+        System.out.println(test.value + " next: " + getPosNode(test).value);
         test = head.left.right.right;
-        System.out.println(test.value + " next: " + getSuccessorNode(test).value);
+        System.out.println(test.value + " next: " + getPosNode(test).value);
         test = head;
-        System.out.println(test.value + " next: " + getSuccessorNode(test).value);
+        System.out.println(test.value + " next: " + getPosNode(test).value);
         test = head.right.left.left;
-        System.out.println(test.value + " next: " + getSuccessorNode(test).value);
+        System.out.println(test.value + " next: " + getPosNode(test).value);
         test = head.right.left;
-        System.out.println(test.value + " next: " + getSuccessorNode(test).value);
+        System.out.println(test.value + " next: " + getPosNode(test).value);
         test = head.right;
-        System.out.println(test.value + " next: " + getSuccessorNode(test).value);
+        System.out.println(test.value + " next: " + getPosNode(test).value);
         test = head.right.right; // 10's next is null
-        System.out.println(test.value + " next: " + getSuccessorNode(test));
+        System.out.println(test.value + " next: " + getPosNode(test));
+
+        // 前驱节点
+        System.out.println(test.value + " pre: " + getPreNode(test).value);
+        test = head.left.left.right;
+        System.out.println(test.value + " pre: " + getPreNode(test).value);
+        test = head.left;
+        System.out.println(test.value + " pre: " + getPreNode(test).value);
+        test = head.left.right;
+        System.out.println(test.value + " pre: " + getPreNode(test).value);
+        test = head.left.right.right;
+        System.out.println(test.value + " pre: " + getPreNode(test).value);
+        test = head;
+        System.out.println(test.value + " pre: " + getPreNode(test).value);
+        test = head.right.left.left;
+        System.out.println(test.value + " pre: " + getPreNode(test).value);
+        test = head.right.left;
+        System.out.println(test.value + " pre: " + getPreNode(test).value);
+        test = head.right;
+        System.out.println(test.value + " pre: " + getPreNode(test).value);
+        test = head.right.right;
+        System.out.println(test.value + " pre: " + getPreNode(test).value);
     }
 
     /**
@@ -69,7 +90,7 @@ public class SuccessorNode {
      * 1.x有右子树,找右子树的最左节点
      * 2.x无右子树,找父节点是某一节点的左子树为止
      */
-    public static Node getSuccessorNode(Node node) {
+    public static Node getPosNode(Node node) {
         if (node == null) {
             return node;
         }
@@ -89,5 +110,43 @@ public class SuccessorNode {
             }
             return parent;
         }
+    }
+
+    /**
+     * 寻找一个节点的前驱节点(中序遍历的前一个节点)
+     * @param node
+     * @return
+     */
+    public static Node getPreNode(Node node){
+        if (node == null) {
+            return node;
+        }
+        // 1.有左节点,找左节点的最右节点
+        if (node.left != null){
+            node = node.left;
+            while (node.right != null){
+               node = node.right;
+            }
+            return node;
+        }
+        // 2.没有左节点
+        else {
+            Node parent = node.parent;
+            // 2.1 当前节点的父节点是左节点
+            if (parent.left == node){
+                // 一直找到节点为父节点的非左节点为止
+                while (parent != null && parent.left == node){
+                    node = parent;
+                    parent = node.parent;
+                }
+               return parent;
+            }
+            // 2.2 当前节点是父节点的右节点
+            else{
+                // 上一个父节点就是前驱节点
+                return parent;
+            }
+        }
+
     }
 }
