@@ -141,4 +141,7 @@
 
 ## [day42](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day42.java)
 >126. 单词接龙 II
+
+## [day43](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day43.java)
+>990. 等式方程的可满足性
 ## 持续更新中...
