@@ -33,3 +33,25 @@
 ## 二叉树的序列化和反序列化
 >1)可以用先序或者中序或者后序或者按层遍历，来实现二叉树的序列化<br>
 2)用了什么方式序列化，就用什么样的方式反序列化
+
+## 如何设计一个打印整棵树的打印函数
+> [案例](https://github.com/fimi2008/algorithm-every-day/blob/master/src/main/java/top/lionxxw/learn/algorithm/lesson/day07/PrintBinaryTree.java)<br>
+
+## 求二叉树最宽的层有多少个节点
+> [案例](https://github.com/fimi2008/algorithm-every-day/blob/master/src/main/java/top/lionxxw/learn/algorithm/lesson/day07/TreeMaxWidth.java)<br>
+
+## 找一个节点的后继节点(中序遍历的后一个节点)
+> [案例](https://github.com/fimi2008/algorithm-every-day/blob/master/src/main/java/top/lionxxw/learn/algorithm/lesson/day07/SuccessorNode.java)<br>
+```
+// 节点数据结果如下
+public static class Node {
+	public int value;
+	public Node left;
+	public Node right;
+	public Node parent;
+
+	public Node(int data) {
+		this.value = data;
+	}
+}
+```
