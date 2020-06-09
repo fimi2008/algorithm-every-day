@@ -11,6 +11,16 @@ import java.util.Arrays;
  */
 public class BaseClass {
 
+    public static class Node {
+        public int value;
+        public Node left;
+        public Node right;
+
+        public Node(int data) {
+            this.value = data;
+        }
+    }
+
     /**
      * 交换数组位子
      */
@@ -101,5 +111,21 @@ public class BaseClass {
             arr[i] = (int) ((maxValue + 1) * Math.random());
         }
         return arr;
+    }
+
+    // for test
+    public static Node generateRandomBST(int maxLevel, int maxValue) {
+        return generate(1, maxLevel, maxValue);
+    }
+
+    // for test
+    public static Node generate(int level, int maxLevel, int maxValue) {
+        if (level > maxLevel || Math.random() < 0.5) {
+            return null;
+        }
+        Node head = new Node((int) (Math.random() * maxValue));
+        head.left = generate(level + 1, maxLevel, maxValue);
+        head.right = generate(level + 1, maxLevel, maxValue);
+        return head;
     }
 }
