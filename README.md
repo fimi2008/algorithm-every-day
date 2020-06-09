@@ -144,4 +144,7 @@
 
 ## [day43](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day43.java)
 >990. 等式方程的可满足性
+
+## [day44](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day44.java)
+>面试题46. 把数字翻译成字符串
 ## 持续更新中...
