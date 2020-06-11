@@ -150,4 +150,7 @@
 
 ## [day45](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day45.java)
 >9. 回文数
+
+## [day46](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day46.java)
+>739. 每日温度
 ## 持续更新中...

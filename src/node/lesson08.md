@@ -11,3 +11,9 @@
 
 ## 二叉树的递归套路深度实践
 1.给定一棵二叉树的头节点head,返回这颗二叉树是不是平衡二叉树
+[答案](https://github.com/fimi2008/algorithm-every-day/blob/master/src/main/java/top/lionxxw/learn/algorithm/lesson/day08/IsBalanced.java)
+
+2.给定一棵二叉树的头节点head,任何两个节点之间都存在距离，返回整棵二叉树的最大距离
+[答案](https://github.com/fimi2008/algorithm-every-day/blob/master/src/main/java/top/lionxxw/learn/algorithm/lesson/day08/MaxDistance.java)
+
+3.给定一棵二叉树的头节点head,返回这颗二叉树中最大的二叉搜索子树的头节点

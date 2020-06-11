@@ -128,4 +128,35 @@ public class BaseClass {
         head.right = generate(level + 1, maxLevel, maxValue);
         return head;
     }
+
+    public static void printTree(Node head) {
+        System.out.println("开始打印二叉树.....");
+        printInOrder(head, 0, "H", 10);
+        System.out.println("打印完成");
+    }
+
+    private static void printInOrder(Node head, int level, String to, int len) {
+        if (head == null) {
+            return;
+        }
+        // 先打印右节点
+        printInOrder(head.right, level + 1, "R", len);
+        // 计算打印的格式
+        String val = to + head.value + to;
+        int lenM = val.length();
+        int lLen = (len - lenM) / 2;
+        int rLen = len - -lenM - lLen;
+        val = getSpace(lLen) + val + getSpace(rLen);
+        System.out.println(getSpace(len * level) + val);
+        printInOrder(head.left, level + 1, "L", len);
+    }
+
+    private static String getSpace(int num) {
+        String space = " ";
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < num; i++) {
+            sb.append(space);
+        }
+        return sb.toString();
+    }
 }
