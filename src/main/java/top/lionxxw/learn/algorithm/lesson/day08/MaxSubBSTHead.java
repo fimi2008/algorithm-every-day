@@ -2,9 +2,6 @@ package top.lionxxw.learn.algorithm.lesson.day08;
 
 import top.lionxxw.learn.algorithm.lesson.day01.BaseClass;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * 给定一棵二叉树的头节点head,返回这颗二叉树中最大的二叉搜索子树的头节点
  * <p>
@@ -30,9 +27,13 @@ public class MaxSubBSTHead extends BaseClass {
     }
 
     public static class Info {
+        // 整个树的最大二叉搜索子树头节点
         public Node maxSubBSTHead;
+        // 整个树的节点数
         public int maxSubBSTSize;
+        // 整个树的最小值
         public int min;
+        // 整个树的最大值
         public int max;
 
         public Info(Node h, int size, int mi, int ma) {
