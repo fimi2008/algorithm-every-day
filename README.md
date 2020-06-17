@@ -159,4 +159,7 @@
 
 ## [day48](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day48.java)
 >297. 二叉树的序列化与反序列化
+
+## [day49](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day49.java)
+>1014. 最佳观光组合
 ## 持续更新中...
