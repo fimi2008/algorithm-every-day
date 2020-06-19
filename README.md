@@ -162,4 +162,7 @@
 
 ## [day49](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day49.java)
 >1014. 最佳观光组合
+
+## [day50](https://github.com/fimi2008/algorithm-every-day/tree/master/src/main/java/top/lionxxw/learn/algorithm/leetcode/Day50.java)
+>1028. 从先序遍历还原二叉树
 ## 持续更新中...
